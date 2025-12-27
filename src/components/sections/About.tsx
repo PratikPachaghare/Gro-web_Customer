@@ -36,7 +36,7 @@ const About = () => {
     <section id="about" className="bg-gray-50">
       <div className="section-container">
         <div className="text-center mb-16">
-          <h2 className="section-title">About TechSolutions</h2>
+          <h2 className="section-title">About Gro-web</h2>
           <p className="section-subtitle mx-auto">
             Your trusted partner in digital transformation, delivering innovative solutions since 2014
           </p>
