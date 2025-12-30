@@ -23,6 +23,14 @@ const Header = () => {
     { name: 'Contact', href: '#contact' },
   ];
 
+  /**
+   * Solid Blue Rectangular Button
+   * bg-primary-600: The solid blue from your theme
+   * rounded-lg: Rectangular shape
+   * hover:bg-primary-700: Darkens slightly on hover
+   */
+  const solidBlueBtn = "bg-primary-600 hover:bg-primary-700 text-white font-bold transition-all duration-300 rounded-lg px-8 py-3 shadow-md active:scale-95 flex items-center justify-center whitespace-nowrap";
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -47,11 +55,6 @@ const Header = () => {
                     !isScrolled ? 'brightness-0 invert' : ''
                   }`} 
                 />
-                {/* If you want the text "gro-web" back, uncomment the span below:
-                  <span className={`font-display font-bold text-xl ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
-                    gro-web
-                  </span> 
-                */}
             </a>
           </div>
 
@@ -63,15 +66,15 @@ const Header = () => {
                 href={link.href}
                 className={`font-medium transition-colors duration-300 relative group ${
                   isScrolled
-                    ? 'text-brandDark hover:text-brandBlue-600'
-                    : 'text-white hover:text-brandGreen-400'
+                    ? 'text-brandDark hover:text-primary-600'
+                    : 'text-white hover:text-sky-300'
                 }`}
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brandGreen-500 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary-600 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
-            <a href="#contact" className="btn-primary">
+            <a href="#contact" className={solidBlueBtn}>
               Get a Quote
             </a>
           </div>
@@ -97,7 +100,7 @@ const Header = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-lg font-medium text-brandDark hover:text-brandBlue-600 transition-colors px-2 py-1"
+                  className="text-lg font-medium text-brandDark hover:text-primary-600 transition-colors px-2 py-1"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}
@@ -106,7 +109,7 @@ const Header = () => {
               <hr className="border-gray-100" />
               <a
                 href="#contact"
-                className="btn-primary text-center w-full"
+                className={`${solidBlueBtn} w-full`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Get a Quote
