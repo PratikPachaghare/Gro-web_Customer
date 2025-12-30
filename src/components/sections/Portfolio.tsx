@@ -240,11 +240,16 @@ const Portfolio = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Work</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Featured projects that showcase our expertise across different industries.
-          </p>
-        </div>
+  <h2 className="text-4xl font-bold mb-4 bg-black bg-clip-text text-transparent">
+    Our Work
+  </h2>
+  <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-4 rounded-full"></div>
+  <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+    Featured projects that showcase our expertise across different industries.
+  </p>
+</div>
+
+
 
         {/* Slider Container */}
         <div className="relative w-full max-w-6xl mx-auto">

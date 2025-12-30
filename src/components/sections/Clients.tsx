@@ -2,27 +2,27 @@ import { Star, Quote } from 'lucide-react';
 
 const Clients = () => {
   const testimonials = [
-    {
-      name: 'Sarah Johnson',
-      position: 'CEO, TechStartup Inc.',
-      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
-      rating: 5,
-      text: 'TechSolutions transformed our digital presence completely. Their team delivered a stunning website and mobile app that exceeded our expectations. Highly recommended!',
-    },
-    {
-      name: 'Michael Chen',
-      position: 'Marketing Director, GrowthCo',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
-      rating: 5,
-      text: 'Working with TechSolutions was a game-changer for our business. Their digital marketing strategies doubled our online engagement in just three months.',
-    },
-    {
-      name: 'Emily Rodriguez',
-      position: 'Founder, HealthPlus',
-      image: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400',
-      rating: 5,
-      text: 'The custom software solution they built for us streamlined our operations significantly. Professional, responsive, and truly expert developers.',
-    },
+    // {
+    //   name: 'Sarah Johnson',
+    //   position: 'CEO, TechStartup Inc.',
+    //   image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400',
+    //   rating: 5,
+    //   text: 'TechSolutions transformed our digital presence completely. Their team delivered a stunning website and mobile app that exceeded our expectations. Highly recommended!',
+    // },
+    // {
+    //   name: 'Michael Chen',
+    //   position: 'Marketing Director, GrowthCo',
+    //   image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400',
+    //   rating: 5,
+    //   text: 'Working with TechSolutions was a game-changer for our business. Their digital marketing strategies doubled our online engagement in just three months.',
+    // },
+    // {
+    //   name: 'Emily Rodriguez',
+    //   position: 'Founder, HealthPlus',
+    //   image: 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400',
+    //   rating: 5,
+    //   text: 'The custom software solution they built for us streamlined our operations significantly. Professional, responsive, and truly expert developers.',
+    // },
     {
       name: 'David Kim',
       position: 'CTO, FinanceHub',
@@ -46,13 +46,13 @@ const Clients = () => {
     },
   ];
 
-  const clientLogos = [
-    { name: 'TechCorp', width: 'w-32' },
-    { name: 'InnovateLab', width: 'w-36' },
-    { name: 'GlobalTech', width: 'w-32' },
-    { name: 'StartupHub', width: 'w-36' },
-    { name: 'DigitalWave', width: 'w-32' },
-    { name: 'CloudSync', width: 'w-36' },
+  const clientLogos = [{}
+    // { name: 'TechCorp', width: 'w-32' },
+    // { name: 'InnovateLab', width: 'w-36' },
+    // { name: 'GlobalTech', width: 'w-32' },
+    // { name: 'StartupHub', width: 'w-36' },
+    // { name: 'DigitalWave', width: 'w-32' },
+    // { name: 'CloudSync', width: 'w-36' },
   ];
 
   return (
@@ -66,7 +66,7 @@ const Clients = () => {
         </div>
 
         <div className="mb-20">
-          <div className="flex flex-wrap justify-center items-center gap-12 opacity-60">
+          {/* <div className="flex flex-wrap justify-center items-center gap-12 opacity-60">
             {clientLogos.map((logo, index) => (
               <div
                 key={index}
@@ -76,7 +76,7 @@ const Clients = () => {
                 <span className="text-gray-500 font-semibold text-sm">{logo.name}</span>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

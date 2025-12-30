@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react';
+import { Mail, Phone, Linkedin,  Instagram } from 'lucide-react';
 import logoIcon from '../../assets/logo_icon/main_logo.png'; 
 import logoText from '../../assets/logo_icon/logo_text.png';
 
@@ -29,16 +29,16 @@ const Footer = () => {
               Building digital products that grow your business. Your trusted IT solutions partner.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-primary-400 transition-colors">
+              <a href="https://www.linkedin.com/in/gro-web/" className="hover:text-primary-400 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="hover:text-primary-400 transition-colors">
+              {/* <a href="#" className="hover:text-primary-400 transition-colors">
                 <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="hover:text-primary-400 transition-colors">
+              </a> */}
+              {/* <a href="#" className="hover:text-primary-400 transition-colors">
                 <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="hover:text-primary-400 transition-colors">
+              </a> */}
+              <a href="https://www.instagram.com/gro_web/" className="hover:text-primary-400 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
             </div>
@@ -79,7 +79,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary-400 flex-shrink-0" />
-                <span>contact@techsolutions.com</span>
+                <span>growebtechsolution@gmail.com</span>
               </li>
             </ul>
           </div>
