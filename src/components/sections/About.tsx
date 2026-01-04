@@ -1,6 +1,7 @@
 import { Users, Code2, Rocket, Lightbulb } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
-
+import video1 from '../../assets/homepage_demo/video1.mp4'
+import video2 from '../../assets/homepage_demo/video2.mp4'
 interface StatItem {
   number: string;
   label: string;
@@ -206,46 +207,66 @@ const About = () => {
         {/* ---------------- SECTION 1: INNOVATION ---------------- */}
         <div className="grid md:grid-cols-2 gap-16 items-center mb-40">
           <div className="img-container rounded-[2rem] overflow-hidden border-8 border-white shadow-2xl shadow-slate-200">
-            <img
+            {/* <img
               src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop"
               className="h-[600px] w-full object-cover opacity-0 animate-on-scroll-img"
               alt="Team collaborating"
-            />
+            /> */}
+           <video
+  src={video1}
+  autoPlay
+  loop
+  muted
+  playsInline
+  className="h-[300px] w-full object-cover opacity-0 animate-on-scroll-img"
+>
+</video>
+
+
           </div>
 
-          <div className="opacity-0 animate-on-scroll-text">
-            <h3 className="text-4xl text-blue-600 font-bold mb-8">
-              Future-Ready Engineering
-            </h3>
-            <p className="text-lg text-slate-700 mb-6">
-              Our engineering philosophy focuses on building "Lego-like" architectures—modular, scalable, and easy to maintain. We don't just write code; we solve problems.
-            </p>
-            <p className="text-lg text-slate-700">
-              From Cloud Infrastructure to Enterprise SaaS, we ensure your tech stack is an asset, not a liability.
-            </p>
-          </div>
+
+    <div className="opacity-0 animate-on-scroll-text">
+  <h3 className="text-4xl text-blue-600 font-bold mb-8">
+Innovative IT Solutions
+  </h3>
+  <p className="text-lg text-slate-700 mb-6">
+    We are an IT consulting and web development company focused on delivering modern, scalable, and business-ready digital solutions.
+  </p>
+  <p className="text-lg text-slate-700">
+    As part of our services, we have built a complete e-commerce demo website to showcase our capabilities, including a demo video demonstrating its features, performance, and user experience.
+  </p>
+</div>
+
+
+
         </div>
 
         {/* ---------------- SECTION 2: AI & DATA ---------------- */}
         <div className="grid md:grid-cols-2 gap-16 items-center mb-40">
-          <div className="opacity-0 animate-on-scroll-text-left">
-            <h3 className="text-4xl text-cyan-600 font-bold mb-8">
-              Data-Driven Growth
-            </h3>
-            <p className="text-lg text-slate-700 mb-6">
-              Harness the power of Artificial Intelligence and Big Data. We transform raw information into actionable insights that drive business decisions.
-            </p>
-            <p className="text-lg text-slate-700">
-              Our AI solutions integrate seamlessly into your existing workflows, enhancing productivity and user experience.
-            </p>
-          </div>
+         <div className="opacity-0 animate-on-scroll-text-left">
+  <h3 className="text-4xl text-cyan-600 font-bold mb-8">
+    Beauty & Wellness Digital Experience
+  </h3>
+  <p className="text-lg text-slate-700 mb-6">
+    Explore our beautifully designed beauty parlour website demo, crafted to showcase modern UI, smooth navigation, and an elegant customer experience.
+  </p>
+  <p className="text-lg text-slate-700">
+    The platform highlights essential features like service listings, appointment booking, pricing details, and a polished gallery to reflect real beauty services.
+  </p>
+</div>
+
 
           <div className="img-container rounded-[2rem] overflow-hidden border-8 border-white shadow-2xl shadow-slate-200">
-            <img
-              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop"
-              className="h-[600px] w-full object-cover opacity-0 animate-on-scroll-img-right"
-              alt="Modern workspace"
-            />
+              <video
+  src={video2}
+  autoPlay
+  loop
+  muted
+  playsInline
+  className="h-[300px] w-full object-cover opacity-0 animate-on-scroll-img"
+>
+</video>
           </div>
         </div>
 
