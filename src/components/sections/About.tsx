@@ -131,6 +131,14 @@ const About = () => {
   ];
 
   return (
+<<<<<<< HEAD
+    <section id="about" className="bg-gray-50">
+      <div className="section-container">
+        <div className="text-center mb-16">
+          <h2 className="section-title">Abouts Gro-web</h2>
+          <p className="section-subtitle mx-auto">
+            Your trusted partner in digital transformation, delivering innovative solutions since 2014
+=======
     <section id="about" className="overflow-hidden py-24 bg-gradient-to-b from-slate-50 to-white">
       {/* ---------------- STYLES (Keep existing CSS) ---------------- */}
       <style jsx>{`
@@ -175,6 +183,7 @@ const About = () => {
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto opacity-0 animate-on-scroll">
             We bridge the gap between complex business challenges and elegant technological solutions through innovation and code.
+>>>>>>> 4a363a0bcc23c0d43b9d50df4bda93f25d37f2e7
           </p>
         </div>
 
