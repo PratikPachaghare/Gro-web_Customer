@@ -3,7 +3,10 @@ import { useState, useRef, useEffect } from 'react';
 
 import video1 from '../../assets/portfolio/1st/video.mp4';
 import thumbnail1 from '../../assets/portfolio/1st/photo.png';
+import Video2 from '../../assets/portfolio/2nd/Vedio.mp4';
 
+
+import thumbnail2 from '../../assets/portfolio/2nd/photo.png';
 const Portfolio = () => {
   const projects = [
     {
@@ -16,13 +19,14 @@ const Portfolio = () => {
       liveUrl: 'https://narendradecor.netlify.app/'
     },
     {
-      title: 'Healthcare Mobile App',
-      videoUrl: 'https://assets.mixkit.co/videos/preview/mixkit-healthcare-app-interface-41758-large.mp4',
-      thumbnail: 'https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=800',
-      industry: 'Healthcare',
+      title: 'Aura Unisex Salon Website',
+      videoUrl: Video2,
+      thumbnail: thumbnail2,
+      
+      industry: 'Beauty',
       description: 'Telemedicine app connecting patients with doctors through video consultations, prescription management, and health tracking.',
-      technologies: ['React Native', 'WebRTC', 'Firebase'],
-      liveUrl: 'https://demo-healthcare.example.com'
+      technologies: ['React'],
+      liveUrl: 'https://auraunisexsalon.netlify.app/'
     },
     {
       title: 'Financial Dashboard',
@@ -240,11 +244,16 @@ const Portfolio = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Work</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Featured projects that showcase our expertise across different industries.
-          </p>
-        </div>
+  <h2 className="text-4xl font-bold mb-4 bg-black bg-clip-text text-transparent">
+    Our Work
+  </h2>
+  <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mb-4 rounded-full"></div>
+  <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+    Featured projects that showcase our expertise across different industries.
+  </p>
+</div>
+
+
 
         {/* Slider Container */}
         <div className="relative w-full max-w-6xl mx-auto">
