@@ -1,7 +1,7 @@
 import { Users, Code2, Rocket, Lightbulb } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import video1 from "../../assets/homepage_demo/video1.mp4";
-import video2 from "../../assets/homepage_demo/video2.mp4";
+const video1 = "https://res.cloudinary.com/dncz7an76/video/upload/v1767597471/video1_jizeuv.mp4";
+const video2 = "https://res.cloudinary.com/dncz7an76/video/upload/v1767597539/Vedio_qgdais.mp4";
 
 interface StatItem {
   number: string;
